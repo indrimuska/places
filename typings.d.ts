@@ -176,4 +176,5 @@ type PlacesInstance = {
   destroy: () => void,
 }
 
-export default function (options: StaticOptions & ReconfigurableOptions): PlacesInstance
+declare function places(options: StaticOptions & ReconfigurableOptions): PlacesInstance;
+export = places;
